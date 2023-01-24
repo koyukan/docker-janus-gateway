@@ -82,8 +82,7 @@ RUN set -ex; \
     \
     cd /build/janus-gateway; \
     sh autogen.sh; \
-    ./configure --prefix=/opt/janus --disable-plugin-voicemail --disable-plugin-nosip --disable-plugin-sip \
-        --disable-plugin-streaming --disable-plugin-recordplay --disable-unix-sockets; \
+    ./configure --prefix=/opt/janus; \
     make; \
     make install; \
     make configs; \
